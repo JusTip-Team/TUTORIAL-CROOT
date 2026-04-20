@@ -5,17 +5,17 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY BACKGROUND */
 body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    background: linear-gradient(135deg, #0C57BF, #4facfe, #43e97b);
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
 }
 
-/* CONTAINER FULL */
+/* CONTAINER */
 #hasphonenumber {
     width: 100%;
     display: flex;
@@ -24,53 +24,32 @@ body {
 }
 
 /* CARD */
-.w-96 {
+.card {
     width: 360px;
-}
-
-/* BOX */
-.bg-white {
-    background: rgba(255, 255, 255, 0.95);
     padding: 30px 25px;
+    background: rgba(255,255,255,0.95);
     border-radius: 20px;
+    text-align: center;
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-    text-align: center;
 }
 
-/* TEXT */
-.font-bold {
+/* TITLE */
+.title {
+    font-size: 24px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.mb-4 {
-    margin-bottom: 16px;
-}
-
-.mt-2 {
-    margin-top: 10px;
-}
-
-/* QR */
-#whatsauthqr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-#whatsauthqr img {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
+/* SUBTITLE */
+.subtitle {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 20px;
 }
 
 /* LINK */
 a {
-    color: #0C57BF;
+    color: #2b6cff;
     text-decoration: none;
 }
 
@@ -78,13 +57,33 @@ a:hover {
     text-decoration: underline;
 }
 
-/* SMALL TEXT */
-#whatsauthcounter {
-    font-size: 14px;
-    color: #444;
+/* QR */
+#whatsauthqr {
+    margin: 20px 0;
 }
 
+#whatsauthqr img {
+    width: 160px;
+    height: 160px;
+}
+
+/* COUNTER */
+#whatsauthcounter {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* LINE */
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* FOOTER */
 #logs {
-    font-size: 12px;
+    font-size: 13px;
     color: #666;
 }
