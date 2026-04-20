@@ -1,4 +1,4 @@
-/* Mengimpor font Poppins dari Google Fonts */
+/* Mengimpor font Poppins untuk tampilan yang modern */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Latar belakang halaman dengan gradasi */
+/* Latar belakang halaman bergradasi */
 body {
     display: flex;
     justify-content: center;
@@ -18,52 +18,90 @@ body {
     padding: 20px;
 }
 
-/* Desain Kartu Login */
+/* Desain Kartu Utama */
 .login-card {
     background: rgba(255, 255, 255, 0.98);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     text-align: center;
 }
 
 .login-card h2 {
     color: #333;
-    margin-bottom: 10px;
     font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .login-card p {
     color: #666;
-    margin-bottom: 30px;
     font-size: 14px;
+    margin-bottom: 25px;
 }
 
-/* Tombol untuk WhatsAuth (opsional jika dibutuhkan) */
-.btn-login {
-    display: inline-block;
-    width: 100%;
-    padding: 12px;
-    background: #25D366; /* Warna hijau khas WhatsApp */
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
+/* Tautan Camera WA */
+.link-wa {
+    color: #25D366; /* Warna hijau khas WhatsApp */
+    text-decoration: none;
     font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: color 0.3s;
 }
 
-.btn-login:hover {
-    background: #128C7E;
-    transform: translateY(-2px); /* Efek tombol sedikit terangkat saat disentuh */
+.link-wa:hover {
+    color: #128C7E;
+    text-decoration: underline;
 }
 
-/* Responsif untuk layar HP */
+/* Kotak Tempat QR Code Muncul */
+.qr-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* Menjaga ukuran tetap proporsional sebelum QR muncul */
+    margin-bottom: 20px;
+    border: 2px dashed #d1d5db;
+}
+
+/* Memastikan gambar QR atau Loading responsif */
+.qr-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Teks Counter */
+.counter {
+    font-size: 15px !important;
+    font-weight: 600;
+    color: #ff6b6b !important; /* Warna mencolok untuk timer */
+    margin-bottom: 15px !important;
+}
+
+/* Link Footer paling bawah */
+.footer-logs a {
+    font-size: 12px;
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-logs a:hover {
+    color: #6e8efb;
+}
+
+/* Responsif untuk layar Handphone */
 @media (max-width: 480px) {
     .login-card {
         padding: 30px 20px;
+    }
+    
+    .qr-box {
+        min-height: 200px;
     }
 }
