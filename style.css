@@ -5,18 +5,20 @@
     box-sizing: border-box;
 }
 
-/* BODY BACKGROUND */
+/* BODY */
 body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+
+    /* Gradient modern */
+    background: linear-gradient(135deg, #2b6cb0, #63b3ed, #48bb78);
 }
 
 /* CONTAINER */
-#hasphonenumber {
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,17 +27,19 @@ body {
 
 /* CARD */
 .card {
-    width: 360px;
-    padding: 30px 25px;
-    background: rgba(255,255,255,0.95);
+    width: 380px;
+    padding: 35px 30px;
+    background: #ffffff;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+
+    /* Shadow biar ngambang */
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
 }
 
 /* TITLE */
 .title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -43,8 +47,8 @@ body {
 /* SUBTITLE */
 .subtitle {
     font-size: 14px;
-    color: #444;
-    margin-bottom: 20px;
+    color: #555;
+    margin-bottom: 25px;
 }
 
 /* LINK */
@@ -58,18 +62,25 @@ a:hover {
 }
 
 /* QR */
-#whatsauthqr {
+.qr {
     margin: 20px 0;
 }
 
-#whatsauthqr img {
-    width: 160px;
-    height: 160px;
+.qr img {
+    width: 120px;
+    height: 120px;
 }
 
-/* COUNTER */
-#whatsauthcounter {
+/* LOADING TEXT */
+.loading-text {
+    margin-top: 10px;
     font-size: 14px;
+    color: #666;
+}
+
+/* STATUS */
+.status {
+    font-size: 15px;
     color: #333;
     margin-bottom: 20px;
 }
@@ -78,12 +89,12 @@ a:hover {
 hr {
     border: none;
     height: 1px;
-    background: #ddd;
+    background: #e0e0e0;
     margin: 20px 0;
 }
 
 /* FOOTER */
-#logs {
+.footer {
     font-size: 13px;
-    color: #666;
+    color: #777;
 }
