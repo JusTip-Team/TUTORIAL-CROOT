@@ -1,107 +1,102 @@
-/* Mengimpor font Poppins untuk tampilan yang modern */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-/* Latar belakang halaman bergradasi */
+/* Body utama */
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0C57BF, #4facfe);
+    height: 100vh;
+}
+
+/* Container full screen */
+#hasphonenumber {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    padding: 20px;
 }
 
-/* Desain Kartu Utama */
-.login-card {
-    background: rgba(255, 255, 255, 0.98);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 420px;
+/* Card utama */
+.w-96 {
+    width: 380px;
+    padding: 25px;
+}
+
+/* Box putih */
+.bg-white {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Rounded */
+.rounded-xl {
+    border-radius: 16px;
+}
+
+/* Text */
+.text-center {
     text-align: center;
 }
 
-.login-card h2 {
-    color: #333;
+.font-bold {
     font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 5px;
 }
 
-.login-card p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 25px;
+/* Spacing */
+.mb-4 {
+    margin-bottom: 16px;
 }
 
-/* Tautan Camera WA */
-.link-wa {
-    color: #25D366; /* Warna hijau khas WhatsApp */
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
+.mt-2 {
+    margin-top: 8px;
 }
 
-.link-wa:hover {
-    color: #128C7E;
-    text-decoration: underline;
-}
-
-/* Kotak Tempat QR Code Muncul */
-.qr-box {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 15px;
+/* QR container */
+#whatsauthqr {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 250px; /* Menjaga ukuran tetap proporsional sebelum QR muncul */
-    margin-bottom: 20px;
-    border: 2px dashed #d1d5db;
 }
 
-/* Memastikan gambar QR atau Loading responsif */
-.qr-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+#whatsauthqr img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Teks Counter */
-.counter {
-    font-size: 15px !important;
-    font-weight: 600;
-    color: #ff6b6b !important; /* Warna mencolok untuk timer */
-    margin-bottom: 15px !important;
-}
-
-/* Link Footer paling bawah */
-.footer-logs a {
-    font-size: 12px;
-    color: #9ca3af;
+/* Link */
+a {
+    color: #0C57BF;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-.footer-logs a:hover {
-    color: #6e8efb;
+a:hover {
+    text-decoration: underline;
 }
 
-/* Responsif untuk layar Handphone */
-@media (max-width: 480px) {
-    .login-card {
-        padding: 30px 20px;
+/* Counter & logs */
+#whatsauthcounter {
+    color: #333;
+    font-size: 14px;
+}
+
+#logs {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
     }
-    
-    .qr-box {
-        min-height: 200px;
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
