@@ -1,1 +1,69 @@
+/* Mengimpor font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Latar belakang halaman dengan gradasi */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    padding: 20px;
+}
+
+/* Desain Kartu Login */
+.login-card {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Tombol untuk WhatsAuth (opsional jika dibutuhkan) */
+.btn-login {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: #25D366; /* Warna hijau khas WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+    background: #128C7E;
+    transform: translateY(-2px); /* Efek tombol sedikit terangkat saat disentuh */
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+}
